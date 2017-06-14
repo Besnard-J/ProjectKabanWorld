@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\anim\\abc_popup_enter.xml"
+    }
+]

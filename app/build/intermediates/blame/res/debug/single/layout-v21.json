@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\layout-v21\\notification_action.xml"
+    }
+]

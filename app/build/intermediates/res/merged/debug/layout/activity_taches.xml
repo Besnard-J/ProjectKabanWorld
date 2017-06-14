@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_taches"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ash_grey_light"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shiro.projectkabanworld_v2.Task">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/nomTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0.00"
+            android:text="Nom de la Tache"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/etatTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.00"
+            android:background="@color/amethyst"
+            android:clickable="true"
+            android:paddingEnd="2dp"
+            android:paddingStart="2dp"
+            android:text="TextView"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:textStyle="normal|bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/bisque"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nomProjet"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Description:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/resumeTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:textSize="16sp"
+                tools:text="description" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnModif"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:text="Modifier" />
+
+            <Button
+                android:id="@+id/btnSuppr"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Supprimer" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutEtat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:id="@+id/modifTxtT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/transparent_white_hex_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textEditT"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Titre:" />
+
+                <EditText
+                    android:id="@+id/editTextTi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:text="Entrer votre Titre" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/modifTxtR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="5.20"
+                android:background="@color/transparent_white_hex_8"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textEditR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:text="Description:"
+                    android:textAlignment="gravity" />
+
+                <EditText
+                    android:id="@+id/editTextRe"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    tools:text="Entrer votre Description" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/transparent_white_hex_8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdbTodo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Todo" />
+
+                <RadioButton
+                    android:id="@+id/rdbDoing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Doing" />
+
+                <RadioButton
+                    android:id="@+id/rdbDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Done" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center|start"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnOK"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:layout_weight="1"
+                    android:text="valider" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_weight="1"
+                    android:text="Cancel" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

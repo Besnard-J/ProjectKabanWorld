@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiro\\Documents\\AndroidStudioProjects\\ProjectKabanWorld_V2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\Shiro\\.android\\build-cache\\44c811b81fa40e144a36bb76cdb37e30c4104b1b\\output\\res\\layout-v11\\notification_media_action.xml"
+    }
+]

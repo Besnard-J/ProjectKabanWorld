@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/nomTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.00"
+            android:text="Nom de la Tache"
+            android:textSize="16sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/etatTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.00"
+            android:text="TextView"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/resumeTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="0.00"
+            android:text="descriptionTache" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

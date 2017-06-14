@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ash_grey_light"
+    android:backgroundTintMode="screen"
+    tools:context="com.example.shiro.projectkabanworld_v2.MainActivity">
+
+    <TextView
+        android:id="@+id/txtHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:paddingStart="-10dp"
+        android:text="Bienvenue User ! "
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/noProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="80dp"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:text="txtNoproect" />
+
+    <Button
+        android:id="@+id/btnAddProjet"
+        style="@android:style/Widget.Button"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtHome"
+        android:layout_gravity="right"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Ajouter un projet"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/LayoutTodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/noProject"
+        android:layout_marginBottom="2dp"
+        android:background="@color/alice_blue"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/txtListT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue_angel"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTodo"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHome"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="A faire" />
+
+            <TextView
+                android:id="@+id/nbpT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.04"
+                android:paddingBottom="2dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                tools:text="nb" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/todoNoproject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            tools:text="txttodoNoproject" />
+
+        <ListView
+            android:id="@+id/lstViewTodo"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_below="@+id/txtTodo"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDoing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LayoutTodo"
+
+        android:layout_marginBottom="2dp"
+        android:background="@color/light_blond"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/txtListA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.28"
+            android:background="@color/blond"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDoing"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LayoutTodo"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="En cours" />
+
+            <TextView
+                android:id="@+id/nbpE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.04"
+                android:paddingBottom="2dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                tools:text="nb" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/doingNoproject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            tools:text="txtdoingNoproject" />
+
+        <ListView
+            android:id="@+id/lstViewDoing"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_below="@id/txtDoing"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutDoing"
+
+        android:layout_marginBottom="2dp"
+        android:background="@color/love_red_light"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/txtListF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/love_red"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDone"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutDoing"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Fait" />
+
+            <TextView
+                android:id="@+id/nbpF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.04"
+                android:paddingBottom="2dp"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                tools:text="nb" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/doneNoproject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            tools:text="txtdoneNoproject" />
+
+        <ListView
+            android:id="@+id/lstViewDone"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_below="@id/txtDone"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>
