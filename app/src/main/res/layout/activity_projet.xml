@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ash_grey_light"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardproj"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        app:cardBackgroundColor="@color/alice_blue">
+
+        <Button
+            android:id="@+id/addTask"
+            style="@android:style/Widget.Button"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Ajouter une tache"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/etatProj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/amethyst"
+            android:paddingEnd="2dp"
+            android:paddingStart="2dp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:text="etat du projet" />
+
+        <LinearLayout
+            android:id="@+id/layoutTitre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/nomProjet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.07"
+                android:text="Nom du projet"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nomProjet"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/blue_angel_light"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Description:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/resumeProjet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nomProjet"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/blue_angel_light"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:textSize="16sp"
+                tools:text="description" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutTaches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resumeProjet"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="120dp"
+            android:background="@color/firebrick_light"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/resumeProjet"
+                android:layout_gravity="top"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/firebrick"
+                android:fontFamily="sans-serif"
+                android:paddingStart="2dp"
+                android:text="Listes des taches :"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtNotask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                tools:text="txtNotask" />
+
+            <ListView
+                android:id="@+id/listTache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="2dp"
+                android:layoutDirection="locale" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnModif"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:text="Modifier" />
+
+            <Button
+                android:id="@+id/btnSuppr"
+                style="@android:style/Widget.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Supprimer" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutEtat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:id="@+id/modifTxtT"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/transparent_white_hex_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textEditT"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Titre:" />
+
+                <EditText
+                    android:id="@+id/editTextT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    tools:text="Entrer votre Titre" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/modifTxtR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="5.20"
+                android:background="@color/transparent_white_hex_8"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textEditR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:text="Description:"
+                    android:textAlignment="gravity" />
+
+                <EditText
+                    android:id="@+id/editTextR"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    tools:text="Entrer votre Description" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/transparent_white_hex_8"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdbTodo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="A faire" />
+
+                <RadioButton
+                    android:id="@+id/rdbDoing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="En cours" />
+
+                <RadioButton
+                    android:id="@+id/rdbDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fait" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center|start"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnOK"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:layout_weight="1"
+                    android:text="valider" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_weight="1"
+                    android:text="Cancel" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
